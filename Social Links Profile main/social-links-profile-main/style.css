@@ -1,0 +1,103 @@
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt";
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0%;
+}
+
+.all {
+  flex: grid;
+  align-items: center;
+  justify-items: center;
+  /* place-items: center; */
+}
+
+h1,
+h4,
+h6 {
+  margin: 0%;
+  text-align: center;
+}
+
+.main {
+  width: 540px;
+  height: 780px;
+  background: hsl(0, 0%, 12%);
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  place-items: center;
+  padding: 0px;
+  margin: 0%;
+}
+.top {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 10% 0% 0% 0%;
+  padding: 0%;
+}
+
+img {
+  border-radius: 50%;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0%;
+  padding-top: 10%;
+  padding-bottom: 0%;
+}
+
+.place {
+  color: hsl(75, 94%, 57%);
+  font-size: 18px;
+  margin: 2% 0% 0% 0%;
+}
+
+.quote {
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+  margin: 10% 0% 0% 0%;
+  padding: 0%;
+}
+
+.buttons {
+  display: grid;
+  align-content: space-evenly;
+  justify-content: space-around;
+  gap: 5%;
+  padding: 0%;
+  margin: 0% 0% 15% 0%;
+}
+
+.primary {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 10px;
+  width: 460px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.primary:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+}
