@@ -15,7 +15,7 @@ body {
 .main {
   background-color: hsl(0, 0%, 100%);
   width: 500px;
-  height: 1120px;
+  height: 1140px;
   border-radius: 15px;
 }
 .inside_main {
@@ -167,8 +167,8 @@ ol.instruction-numbers li::marker {
 
 .nutrition p {
   font-size: 10.5px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .nutrision-table {
   display: flex;
@@ -181,20 +181,26 @@ ol.instruction-numbers li::marker {
 .fat {
   font-size: 10.5px;
   display: flex;
-  /* justify-content: space-between; <...........Tu skonczylem */
+  justify-content: space-between;
+  justify-self: start;
   padding: 0px;
   text-align: left;
 }
 .nutriation-name {
   padding-left: 20px;
+  flex: 1;
+  margin: 0;
 }
 
 .quantiti {
   font-weight: 800;
   color: hsl(14, 45%, 36%);
-  /* padding-right: 180px; */
-  /* display: flex;
-  justify-items: self-end; */
+  display: flex;
+  justify-content: start;
+  text-align: right;
+  min-width: 200px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .nutrition hr {
