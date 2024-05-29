@@ -1,0 +1,61 @@
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 375px;
+  height: 500px;
+  border-radius: 15px;
+  border-style: ridge;
+  border-color: hsl(0, 0%, 0%);
+  box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.photo {
+  background-image: url("./assets/images/illustration-article.svg");
+  width: 336px;
+  height: 201px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.Lear {
+  background-color: hsl(47, 88%, 63%);
+  width: 50px;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+  border-radius: 2px;
+}
+. .Pub {
+}
+.H_and_C {
+}
+.text {
+}
+.photo_G {
+  background-image: url("./assets/images/image-avatar.webp");
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: cover;
+}
+.name {
+}
