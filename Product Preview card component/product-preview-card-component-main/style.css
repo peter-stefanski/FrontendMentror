@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: hsl(30, 38%, 92%);
   width: 100vw;
@@ -44,12 +50,15 @@ body {
   align-items: center;
 }
 .name {
-  height: 30%;
-  font-size: 60px;
+  height: 200px;
+  font-size: 50px;
+  width: 400px;
   font-family: "Fraunces", serif;
   font-weight: 700;
   display: flex;
   align-items: center;
+  letter-spacing: 2.1px;
+  margin: 10px 0 10px 0;
 }
 .text {
   height: 30%;
@@ -59,6 +68,7 @@ body {
   line-height: 150%;
   display: flex;
   align-items: center;
+  margin: 10px 0 10px 0;
 }
 
 .price {
@@ -68,6 +78,7 @@ body {
   align-items: center;
   height: 10%;
   width: 100%;
+  margin: 10px 0 5px 0;
 }
 .new_price {
   font-size: 70px;
@@ -116,4 +127,137 @@ body {
 
 .button:hover {
   background-color: hsl(228, 12%, 48%);
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: start;
+  }
+
+  .right-main {
+    width: 270px;
+    height: 310px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+  }
+  .left {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 230px;
+    background-color: blue;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: start;
+  }
+
+  .perfume {
+    height: 10%;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0 10px 0;
+  }
+
+  .name {
+    display: inline-block;
+    height: 50px;
+    font-size: 28px;
+    width: 270px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    margin: 5px 0 5px 0;
+    position: sticky;
+    letter-spacing: 0;
+  }
+
+  .text {
+    height: 30%;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 5px 0;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    margin: 10px 0 20px 0;
+  }
+  .new_price {
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+  }
+  .old_price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+  }
+  .button {
+    height: 15%;
+    /* height: 65px; */
+    width: 100%;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: hsl(158, 36%, 37%);
+    margin: 0 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .add {
+    color: hsl(0, 0%, 100%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .car {
+    background-image: url("./images/icon-cart.svg");
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin-right: 10px;
+  }
 }
