@@ -1,0 +1,132 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  width: 654px;
+  height: 1104px;
+  border-radius: 20px;
+  box-shadow: 0px 40px 5px 20px hsl(217, 54%, 8%);
+  border-shadow-radius: ;
+}
+/* ................................ */
+.main {
+  width: auto;
+  height: calc(100% - 70px);
+  margin: 35px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  position: relative;
+}
+/* ................................ */
+.big_photo {
+  background-image: url("./images/image-equilibrium.jpg");
+  width: 100%;
+  height: 55%;
+  background-size: cover;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* ................................ */
+.name {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin: 40px 0 20px 0;
+}
+.article {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.7em;
+  font-weight: 300;
+  margin: 20px 0 20px 0;
+  display: inline;
+}
+/* ................................ */
+
+.data,
+.possision,
+.days,
+.user {
+  display: flex;
+  flex-direction: row;
+}
+.data {
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+.possision,
+.days,
+.user {
+  display: flex;
+  align-items: center;
+}
+.possision_photo {
+  background-image: url("./images/icon-ethereum.svg");
+  width: 15px;
+  height: 25px;
+  background-size: cover;
+  margin-right: 10px;
+}
+.possision_text {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+/* ................................ */
+
+.days_photo {
+  background-image: url("./images/icon-clock.svg");
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  margin-right: 10px;
+}
+.days_text {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+/* ................................ */
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+  margin: 40px 0 40px 0;
+}
+.user {
+}
+.user_photo {
+  background-image: url("./images/image-avatar.png");
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  border: 0.15rem solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.user_text {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.user_name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+/* ................................ */
+
+@media screen and (max-width: 375px) {
+}
