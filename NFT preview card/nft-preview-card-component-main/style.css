@@ -129,4 +129,12 @@ hr {
 /* ................................ */
 
 @media screen and (max-width: 375px) {
+  .container {
+    transform: scale(0.9);
+    /* display: inline; */
+    /* width: 90vw; */
+    margin: 10px;
+    height: 50vh;
+    /* position: fixed; */
+  }
 }
