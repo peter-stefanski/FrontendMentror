@@ -104,8 +104,7 @@ hr {
   border: 1px solid hsl(215, 32%, 27%);
   margin: 40px 0 40px 0;
 }
-.user {
-}
+
 .user_photo {
   background-image: url("./images/image-avatar.png");
   width: 60px;
@@ -115,6 +114,7 @@ hr {
   border-radius: 50%;
   margin-right: 20px;
 }
+
 .user_text {
   color: hsl(215, 51%, 70%);
   font-weight: 300;
@@ -136,5 +136,77 @@ hr {
     margin: 10px;
     height: 50vh;
     /* position: fixed; */
+  }
+
+  .main {
+    width: auto;
+    height: calc(100% - 70px);
+    margin: 25px;
+  }
+
+  .name {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  .article {
+    color: hsl(215, 51%, 70%);
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  .possision_photo {
+    background-image: url("./images/icon-ethereum.svg");
+    width: 12px;
+    height: 22px;
+    background-size: cover;
+    margin-right: 15px;
+    z-index: 1;
+  }
+  .possision_text {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  .days_photo {
+    background-image: url("./images/icon-clock.svg");
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    margin-right: 10px;
+  }
+  .days_text {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  hr {
+    border: 1px solid hsl(215, 32%, 27%);
+    margin: 20px 0 20px 0;
+  }
+
+  .user_photo {
+    background-image: url("./images/image-avatar.png");
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: cover;
+    border: 0.15rem solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .user_text {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+  .user_name {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 1rem;
   }
 }
