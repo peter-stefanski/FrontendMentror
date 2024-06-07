@@ -40,66 +40,25 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
+.big_photo:hover {
+  filter: sepia(100%) hue-rotate(140deg) saturate(7) opacity(100%);
 }
 
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
+.big_photo::after {
+  content: url("./images/icon-view.svg");
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-image: url("./images/icon-view.svg");
-}
-.big_photo:hover .image {
-  opacity: 0.3;
-}
-
-.big_photo:hover .middle {
-  opacity: 1;
-}
-
-/* .view {
   display: none;
-} */
-
-.big_photo:hover {
-  filter: brightness(100%) grayscale(700%) sepia(500%) hue-rotate(140deg)
-    saturate(1000%);
+  filter: saturate(10%);
+  z-index: 1;
 }
 
-/* .view:hover {
-  background-image: url("./images/icon-view.svg");
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-} */
+.big_photo:hover::after {
+  display: block;
+}
 
-/*     
-  background-image: url("./images/icon-view.svg");
-  width: 48px;
-  height: 48px; */
-
-/* .view {
-  background-image: url("./images/icon-view.svg");
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-} */
 /* ................................ */
 .name {
   color: hsl(0, 0%, 100%);
