@@ -11,32 +11,35 @@
   <title>Frontend Mentor | Order summary card</title>
   <link rel="stylesheet" href="style.css">
 
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-  <div>
+  <div class="main_constaine">
     <div class="main_photo"></div>
     <div class="main">
-      <div>
+      <div class="order">
         <p>Order Summary</p>
       </div>
-      <article>
+      <article class="article">
         <p>You can now listen to millions of songs, audiobooks, and podcasts on any
           device anywhere you like!
         </p>
       </article>
       <div class="table">
         <div class="music_photo"></div>
-        <div>Annual Plan</div>
-        <div>$59.99/year</div>
-        <div>Change</div>
+        <div class="plan_and_price_part">
+          <div class="plan">Annual Plan</div>
+          <div class="price">$59.99/year</div>
+        </div>
+        <div class="change">Change</div>
       </div>
-      <div><button>Proceed to Payment</button></div>
-      <div>Cancel Order</div>
+      <button class="button">Proceed to Payment</button>
+      <div class="cancel">Cancel Order</div>
     </div>
   </div>
 </body>
