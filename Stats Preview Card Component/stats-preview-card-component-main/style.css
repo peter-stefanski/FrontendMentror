@@ -97,40 +97,47 @@ body {
 @media screen and (max-width: 375px) {
   .main {
     width: 350px;
-    height: 456px;
-    background-color: hsl(244, 38%, 16%);
+    height: 835px;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    border-radius: 1rem;
-    margin: 0%;
+    border-radius: 0.5rem;
   }
-
   .photo_right {
     background-image: url("./images/image-header-mobile.jpg");
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    background-size: cover;
-    width: 375px;
-    height: 275px;
-    margin: 0%;
-    filter: sepia(25%) hue-rotate(220deg) saturate(5) opacity(50%);
-    background-color: rgb(219, 40, 192);
-    object-fit: cover;
+    border-bottom-right-radius: 0;
+    width: 350px;
+    height: 260px;
   }
-
   .text_left {
-    width: 420px;
-    height: 336px;
-    margin: 60px 90px 60px 60px;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-    background-size: cover;
+    width: 280px;
+    height: 545px;
+    margin: 20px 35px 10px 35px;
     font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_title {
+    margin: 20px 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+  }
+  .text p {
+    margin: 5px;
+  }
+  .data {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    text-align: center;
   }
 }
