@@ -28,16 +28,61 @@ body {
   align-items: start;
 }
 .round_area {
-  margin: 4rem;
+  margin: 3rem 5rem 3rem 3rem;
 }
 .left_photo {
+  background-image: url("./images/icon-sedans.svg");
+  width: 64px;
+  height: 40px;
+  background-size: cover;
 }
-.main_title_Sedans {
+.main_title_Sedans,
+.main_title_SUVs,
+.main_title_Luxury {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
 }
-.text_Sedans {
+.text_Sedans,
+.text_SUVs,
+.text_Luxury {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  text-align: 1rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+.button_Sedans,
+.button_SUVs,
+.button_Luxury {
+  width: 10rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
 }
 .button_Sedans {
+  color: hsl(31, 77%, 52%);
 }
+.button_SUVs {
+  color: hsl(184, 100%, 22%);
+}
+.button_Luxury {
+  color: hsl(179, 100%, 13%);
+}
+
 /* ......................................... */
 .middle_conteiner {
   width: 500px;
@@ -45,13 +90,12 @@ body {
   background-color: hsl(184, 100%, 22%);
 }
 .middle_photo {
+  background-image: url("./images/icon-suvs.svg");
+  width: 64px;
+  height: 40px;
+  background-size: cover;
 }
-.main_title_SUVs {
-}
-.text_SUVs {
-}
-.button_SUVs {
-}
+
 /* ......................................... */
 .right_conteiner {
   width: 500px;
@@ -61,10 +105,8 @@ body {
   border-bottom-right-radius: inherit;
 }
 .right_photo {
-}
-.main_title_Luxury {
-}
-.text_Luxury {
-}
-.button_Luxury {
+  background-image: url("./images/icon-luxury.svg");
+  width: 64px;
+  height: 40px;
+  background-size: cover;
 }
