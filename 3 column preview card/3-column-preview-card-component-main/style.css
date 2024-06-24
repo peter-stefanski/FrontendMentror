@@ -129,4 +129,15 @@ body {
     width: 260px;
     height: 360px;
   }
+  .main_title_Sedans,
+  .main_title_SUVs,
+  .main_title_Luxury {
+    margin: 1rem 0;
+  }
+  .text_Sedans,
+  .text_SUVs,
+  .text_Luxury {
+    margin: 1rem 0 8rem 0;
+    font-size: 0.5rem;
+  }
 }
