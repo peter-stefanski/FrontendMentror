@@ -138,13 +138,17 @@ body {
   .main_title_Sedans,
   .main_title_SUVs,
   .main_title_Luxury {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    font-size: 2rem;
   }
+
   .text_Sedans,
   .text_SUVs,
   .text_Luxury {
     margin: 1rem 0 8rem 0;
     font-size: 0.5rem;
+    line-height: 1.4rem;
+    font-weight: 300;
   }
 
   .right_conteiner {
@@ -152,5 +156,42 @@ body {
     border-bottom-left-radius: inherit;
     border-top-right-radius: 0;
     border-bottom-right-radius: inherit;
+  }
+
+  .left_photo,
+  .middle_photo,
+  .right_photo {
+    width: 40px;
+    height: 25px;
+    margin: 1.5rem 0;
+  }
+
+  .text_Sedans,
+  .text_SUVs,
+  .text_Luxury {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .button_Sedans,
+  .button_SUVs,
+  .button_Luxury {
+    width: 6rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.6rem;
+    cursor: pointer;
+    margin: 1.7rem 0 9rem 0;
+  }
+
+  .round_area {
+    margin: 1rem 2rem 1rem 2rem;
+    width: 195px;
+    height: 330px;
   }
 }
