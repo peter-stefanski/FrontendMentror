@@ -11,21 +11,21 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  padding: 0;
   font-family: "Kumbh Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   overflow: hidden;
   margin: 0;
 }
-.general {
+/* .general {
   position: sticky;
-}
-.left_circle {
+} */
+/* .left_circle {
   background-image: url(./images/bg-pattern-top.svg);
   width: 1500px;
   height: 1500px;
-  position: sticky;
-  left: 100px;
+  position: static;
   background-size: cover;
   z-index: 0;
   margin: 0;
@@ -35,11 +35,12 @@ body {
   background-image: url(./images/bg-pattern-bottom.svg);
   width: 1500px;
   height: 1500px;
-  position: sticky;
-
+  position: fixed;
+  left: 20%;
+  top: 40%;
   background-size: cover;
   z-index: 0;
-}
+} */
 .conster-main {
   width: 500px;
   height: 550px;
