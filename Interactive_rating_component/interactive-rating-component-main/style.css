@@ -1,16 +1,69 @@
 body {
   margin: 0;
-  background-color: blueviolet;
+  background-color: hsl(216, 12%, 8%);
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .main_container {
-  width: 800px;
+  width: 500px;
   height: 500px;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 20px;
+  border-radius: 40px;
+  /* background-color: hsl(213, 19%, 18%); */
+  padding: 5%;
+  background: linear-gradient(0deg, hsl(216, 12%, 10%), hsl(213, 19%, 16%));
+  background-size: cover;
+}
+
+.cirle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.first_container {
+}
+.cirle star {
+}
+.second_container {
+}
+.title {
+}
+.explanation {
+}
+.third_container {
+}
+.circle rate1 {
+}
+.circle rate2 {
+}
+.circle rate3 {
+}
+.circle rate4 {
+}
+.circle rate5 {
+}
+.third_container {
+}
+.button button {
+  width: 80%;
+  height: 50px;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 100px;
+  border: none;
+  color: hsl(213, 19%, 18%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+}
+.succes {
+  display: none;
 }
