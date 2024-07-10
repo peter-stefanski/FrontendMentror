@@ -35,6 +35,9 @@ body {
 .second_container {
 }
 .title {
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
 }
 .explanation {
 }
