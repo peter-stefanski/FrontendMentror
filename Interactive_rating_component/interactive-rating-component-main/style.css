@@ -11,7 +11,8 @@ body {
   font-style: normal;
 }
 
-.main_container {
+.main_container,
+.succes {
   width: 400px;
   height: 400px;
   border-radius: 30px;
@@ -21,22 +22,28 @@ body {
 }
 
 .cirle_star button {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   background-color: hsl(213, 19%, 18%);
   border: none;
   padding: 0;
-  margin: 0 0 0 4%;
+  margin: 0;
 }
 .star {
   background-image: url("./images/icon-star.svg");
-  background-size: cover;
-  width: 18px;
-  height: 18px;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
   background-color: rgb(53, 34, 121);
   border-radius: 100%;
-  margin-left: 10px;
+  margin-left: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  font-family: inherit;
 }
 
 .first_container {
@@ -49,15 +56,22 @@ body {
   font-size: 30px;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
-  margin: 10% 0 5% 4%;
+  margin: 2rem 0 1rem 0;
 }
-.explanation {
+.explanation,
+.text_after {
   color: hsl(217, 12%, 63%);
-  margin: 0 0 8% 4%;
+  margin: 0 0 8% 0;
   letter-spacing: 1px;
   line-height: 25px;
   font-size: 15px;
 }
+
+.text_after {
+  text-align: center;
+  margin: 0 5px;
+}
+
 .third_container {
   display: flex;
   flex-direction: row;
@@ -82,6 +96,14 @@ body {
   color: hsl(217, 12%, 63%);
   font-weight: 700;
   font-size: 16px;
+}
+
+.rate_btn_1 button:hover,
+.rate_btn_2 button:hover,
+.rate_btn_3 button:hover,
+.rate_btn_4 button:hover,
+.rate_btn_5 button:hover {
+  background-color: hsl(0, 0%, 100%);
 }
 .circle rate3 {
 }
@@ -111,6 +133,40 @@ body {
   font-size: 1rem;
   letter-spacing: 0.15rem;
 }
+.submit :hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.photo_succes {
+  background-image: url("./images/illustration-thank-you.svg");
+  width: 162px;
+  height: 108px;
+  margin-top: 2rem;
+}
+
+.selected {
+  color: hsl(25, 97%, 53%);
+}
+
+.selected_background {
+  background-color: hsl(213, 19%, 18%);
+  width: 12rem;
+  height: 2.4rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
 .succes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
   display: none;
 }
