@@ -1,8 +1,8 @@
-const mainConstainer = document.querySelector(".main-constainer");
+const mainContainer = document.querySelector(".main_container");
 const thanksConstainer = document.querySelector(".succes");
-const sumbitButton = document.getElementById("submit");
+const submitButton = document.getElementById("submit");
 
-sumbitButton.addEventListener("click", () => {
+submitButton.addEventListener("click", () => {
   thanksConstainer.classList.remove("hidden");
-  mainConstainer.style.display = "none";
+  mainContainer.style.display = "none";
 });
