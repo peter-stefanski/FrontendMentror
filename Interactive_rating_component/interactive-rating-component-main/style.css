@@ -36,7 +36,7 @@ body {
   background-size: contain;
   width: 20px;
   height: 20px;
-  background-color: rgb(53, 34, 121);
+  background-color: hsl(213, 19%, 18%);
   border-radius: 100%;
   margin-left: 15px;
   background-repeat: no-repeat;
@@ -47,12 +47,6 @@ button {
   font-family: inherit;
 }
 
-.first_container {
-}
-.cirle star {
-}
-.second_container {
-}
 .title {
   font-size: 30px;
   color: hsl(0, 0%, 100%);
@@ -104,15 +98,6 @@ button {
 .rate_btn:focus {
   background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
-}
-
-.circle rate3 {
-}
-.circle rate4 {
-}
-.circle rate5 {
-}
-.third_container {
 }
 
 .fourth_container {
@@ -172,7 +157,7 @@ button {
   display: none;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .main_container,
   .succes {
     width: 300px;
@@ -181,5 +166,140 @@ button {
     padding: 6%;
     background: linear-gradient(0deg, hsl(216, 12%, 10%), hsl(213, 19%, 16%));
     background-size: cover;
+  }
+
+  .cirle_star button {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .star {
+    background-image: url("./images/icon-star.svg");
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 100%;
+    margin-left: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+  .title {
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin: 1rem 0 1rem 0;
+  }
+  .explanation,
+  .text_after {
+    color: hsl(217, 12%, 63%);
+    margin: 0 0 8% 0;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+
+  .text_after {
+    text-align: center;
+    margin: 0 5px;
+  }
+
+  .third_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .circle rate1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: hsl(213, 19%, 18%);
+  }
+  .rate_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color 0.2s linear;
+  }
+
+  .rate_btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .rate_btn:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .fourth_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+  }
+  .submit button {
+    width: 370px;
+    height: 50px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 100px;
+    border: none;
+    color: hsl(213, 19%, 18%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+  }
+  .submit :hover {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .photo_succes {
+    background-image: url("./images/illustration-thank-you.svg");
+    width: 162px;
+    height: 108px;
+    margin-top: 2rem;
+  }
+
+  .selected {
+    color: hsl(25, 97%, 53%);
+  }
+
+  .selected_background {
+    background-color: hsl(213, 19%, 18%);
+    width: 12rem;
+    height: 2.4rem;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .succes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden {
+    display: none;
   }
 }
