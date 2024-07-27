@@ -16,7 +16,7 @@ body {
 
 .bacground_photo {
 }
-.main {
+.heading-container {
   background-color: white;
   width: 22%;
   height: 40%;
@@ -39,8 +39,31 @@ body {
 .title {
   color: hsl(292, 42%, 14%);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  list-style: none;
+}
+details summary button::after {
+  background-image: url("./assets/images/icon-minus.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 30px;
+  height: 31px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.title:hover {
+  color: hsl(293, 69%, 41%);
 }
 .text {
   color: hsl(292, 16%, 49%);
@@ -61,7 +84,7 @@ button {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
 }
-button:hover {
+/* button:hover {
   background-image: url("./assets/images/icon-minus.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,7 +94,7 @@ button:hover {
   height: 31px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
-}
+} */
 
 hr {
   border: 0;
@@ -91,4 +114,10 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+}
+
+summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
