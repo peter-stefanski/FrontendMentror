@@ -10,18 +10,22 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 400px 25px;
 }
 
-.bacground_photo {
-}
 .heading-container {
+  display: inline-block;
   background-color: white;
   width: 22%;
-  height: 40%;
+  max-height: 800px;
   border-radius: 1rem;
-  padding: 20px;
+  padding: 25px;
   line-height: 22px;
 }
 .name {
@@ -49,17 +53,12 @@ details summary::-webkit-details-marker {
 
 details summary {
   list-style: none;
+  cursor: pointer;
+  color: black;
 }
-details summary button::after {
+
+details[open] > summary::after {
   background-image: url("./assets/images/icon-minus.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 0;
-  width: 30px;
-  height: 31px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0);
 }
 
 .title:hover {
@@ -71,9 +70,11 @@ details summary button::after {
   font-weight: 400;
   margin: 0;
   padding: 5px 15px 15px 15px;
+  cursor: pointer;
 }
 
-button {
+summary::after {
+  content: "";
   background-image: url("./assets/images/icon-plus.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,17 +85,11 @@ button {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
 }
-/* button:hover {
-  background-image: url("./assets/images/icon-minus.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 0;
-  width: 30px;
-  height: 31px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0);
-} */
+
+summary:hover {
+  cursor: pointer;
+  color: black;
+}
 
 hr {
   border: 0;
