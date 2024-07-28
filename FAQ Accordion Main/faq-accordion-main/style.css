@@ -22,7 +22,7 @@ body {
 .heading-container {
   display: inline-block;
   background-color: white;
-  width: 22%;
+  width: 500px;
   max-height: 800px;
   border-radius: 1rem;
   padding: 25px;
@@ -74,7 +74,8 @@ details[open] > summary::after {
 }
 
 summary::after {
-  content: "";
+  content: "aaa";
+  color: rgba(240, 248, 255, 0);
   background-image: url("./assets/images/icon-plus.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -115,4 +116,57 @@ summary {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 100px 0;
+    background-size: auto;
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+  }
+
+  .heading-container {
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+    max-height: 1200px;
+    border-radius: 1rem;
+    padding: 25px;
+    line-height: 22px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+  .photo_star {
+    background-image: url("./assets/images/icon-star.svg");
+    width: 25px;
+    height: 26px;
+    margin-right: 24px;
+    background-size: cover;
+  }
+  .faq {
+    font-size: 2rem;
+  }
+  .title {
+    color: hsl(292, 42%, 14%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .possision_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+  }
+  .possision_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
 }
