@@ -92,7 +92,7 @@ p {
 .born {
   margin: 0;
 }
-.share {
+.button_01 {
   background-image: url(./images/icon-share.svg);
   width: 40px;
   height: 40px;
@@ -104,25 +104,73 @@ p {
   margin: 0;
 }
 
+.button_01:hover {
+  background-color: rgb(60, 60, 60);
+  filter: brightness(250%);
+}
+
 div button {
   contant: "";
 }
 
 .pop_out {
   background-color: var(--veryDarkGrayishBlue);
-  width: 200px;
-  height: 50px;
+  width: 250px;
+  height: 60px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.share {
   color: var(--DesaturatedDarkBlue);
   font-weight: 700;
   word-spacing: 30px;
   letter-spacing: 5px;
-  font-size: 14px;
+  font-size: 12px;
+  margin: 15px;
 }
 
-.share:hover {
-  background-color: var(--DesaturatedDarkBlue);
+.fb {
+  background-image: url(./images/icon-facebook.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: none;
+  border-radius: 50%;
+  margin: 0;
 }
+.twitter {
+  background-image: url(./images/icon-twitter.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: none;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.pinterest {
+  background-image: url(./images/icon-pinterest.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: none;
+  border-radius: 50%;
+  margin: 0;
+}
+}
+
+
 /* .share::after {
   background-color: var(--veryDarkGrayishBlue);
   width: 200px;
