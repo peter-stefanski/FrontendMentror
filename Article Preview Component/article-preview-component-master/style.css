@@ -30,6 +30,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+  box-shadow: 5px 5px 5px rgba(83, 83, 83, 0.032);
 }
 .photo {
   background-image: url(./images/drawers.jpg);
@@ -105,7 +106,7 @@ p {
 }
 
 .button_01:hover {
-  background-color: rgb(60, 60, 60);
+  background-color: rgb(37, 37, 46);
   filter: brightness(250%);
 }
 
@@ -122,11 +123,21 @@ div button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
- 
+  border: none;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--veryDarkGrayishBlue);
+  z-index: -1;
+  margin-bottom: 5px;
 }
 
 .share {
-  color: var(--DesaturatedDarkBlue);
+  color: var(--GrayishBlue);
   font-weight: 700;
   word-spacing: 30px;
   letter-spacing: 5px;
@@ -168,8 +179,17 @@ div button {
   border-radius: 50%;
   margin: 0;
 }
-}
 
+.cloud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  z-index: 1;
+  position: relative;
+  right: 185px;
+  top: 55px;
+}
 
 /* .share::after {
   background-color: var(--veryDarkGrayishBlue);
