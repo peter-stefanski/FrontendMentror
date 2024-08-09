@@ -181,14 +181,15 @@ div button {
 }
 
 .cloud {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   border: none;
   z-index: 1;
   position: relative;
-  right: 185px;
-  top: 55px;
+  left: 799px;
+  bottom: 170px;
+  width: 280px;
 }
 
 @media screen and (max-width: 375px) {
