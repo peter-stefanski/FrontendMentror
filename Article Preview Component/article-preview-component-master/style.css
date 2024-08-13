@@ -103,6 +103,7 @@ p {
   border: none;
   border-radius: 50%;
   margin: 0;
+  /* position: absolute; */
 }
 
 .button_01:hover {
@@ -186,7 +187,7 @@ div button {
   align-items: center;
   border: none;
   z-index: 1;
-  position: relative;
+  /* position: relative; */
   left: 799px;
   bottom: 170px;
   width: 280px;
@@ -290,8 +291,11 @@ div button {
     background-size: 14px;
     border: none;
     border-radius: 50%;
-    margin: 0;
-    z-index: 10;
+    padding-right: 10px;
+    z-index: 20; /* Upewnij się, że z-index przycisku jest wyższy */
+    position: fixed; /* Możesz zmienić na fixed, aby przycisk zawsze był widoczny */
+  
+  
   }
 
   .button_01:hover {
@@ -317,7 +321,7 @@ div button {
     border-top-right-radius: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     position: relative;
     bottom: 70px;
@@ -327,14 +331,9 @@ div button {
     width: 300px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-    position: static;
-    right: 0px;
-    top: 0px;
     border-bottom-left-radius: 20px;
-  }
+    margin: 0;
+    padding: 0;
 
   .arrow-down {
     width: 0;
@@ -353,7 +352,7 @@ div button {
     word-spacing: 30px;
     letter-spacing: 5px;
     font-size: 12px;
-    margin: 15px;
+    margin: 15px 15px 15px 25px;
   }
 
   .fb {
