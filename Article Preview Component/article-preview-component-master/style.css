@@ -187,11 +187,13 @@ div button {
   align-items: center;
   border: none;
   z-index: 1;
-  /* position: relative; */
-  left: 799px;
-  bottom: 170px;
-  width: 280px;
-  margin: 0;
+  position: sticky;
+  /* right: 1595px; */
+  bottom: 470px;
+  margin-left: 815px;
+
+  /* width: 280px;
+  margin: 0; */
 }
 
 @media screen and (max-width: 375px) {
@@ -207,6 +209,7 @@ div button {
     font-style: normal;
     color: var(--veryDarkGrayishBlue);
   }
+
   .heading_container {
     background-color: hsl(0, 0%, 100%);
     width: 300px;
@@ -249,6 +252,7 @@ div button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 30px;
   }
   .user_info {
     display: flex;
@@ -291,11 +295,9 @@ div button {
     background-size: 14px;
     border: none;
     border-radius: 50%;
-    padding-right: 10px;
-    z-index: 20; /* Upewnij się, że z-index przycisku jest wyższy */
-    position: fixed; /* Możesz zmienić na fixed, aby przycisk zawsze był widoczny */
-  
-  
+    z-index: 20;
+    position: sticky;
+    top: 20px;
   }
 
   .button_01:hover {
@@ -316,7 +318,7 @@ div button {
   .pop_out {
     background-color: var(--veryDarkGrayishBlue);
     width: 350px;
-    height: 70px;
+    height: 105px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     display: flex;
@@ -324,17 +326,18 @@ div button {
     justify-content: start;
     align-items: center;
     position: relative;
-    bottom: 70px;
+    bottom: 105px;
   }
 
   .cloud {
     width: 300px;
-    display: flex;
+    display: none;
     flex-direction: row;
     border-bottom-left-radius: 20px;
     margin: 0;
     padding: 0;
-
+    position: absolute;
+  }
   .arrow-down {
     width: 0;
     height: 0;
