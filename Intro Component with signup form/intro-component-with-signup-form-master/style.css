@@ -16,25 +16,54 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: blue;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
+
+input {
+  padding-left: 20px;
+  font-weight: 800;
+}
+
+input:active {
+  border: 2px solid rgb(106, 106, 106);
+}
+
+/* input.error {
+  border: 2px solid red; 
+  background-color: #ffe6e6; 
+} */
+
+/* .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+} */
 
 .left_side {
   display: flex;
   flex-direction: column;
-  padding: 200px;
+  padding: 500px;
   color: white;
+  font-size: 1.2rem;
+}
+
+.left_side p {
+  font-size: 0.8rem;
 }
 .right_side {
   display: flex;
   flex-direction: column;
-  padding: 200px;
+  padding: 300px;
 }
 .try_btn {
   height: 50px;
-  background-color: var(--Grayish_Blue);
+  background-color: var(--Dark_Blue);
   margin-bottom: 10px;
   border-radius: 10px;
+  color: white;
 }
+
 .container {
   width: 500px;
   height: 400px;
@@ -50,16 +79,25 @@ body {
   margin-bottom: 10px;
   margin: 10px;
   border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+  border: 0;
 }
 
 .terms {
   margin: 10px;
+  font-size: 10px;
 }
 /* .............................. */
-.name {
+.name,
+.surname,
+.email,
+.password {
   margin: 10px;
   height: 50px;
   border-radius: 5px;
+  border: 0.1px solid gray;
 }
 
 .name:hover {
@@ -69,11 +107,6 @@ body {
 }
 
 /* .............................. */
-.surname {
-  margin: 10px;
-  height: 50px;
-  border-radius: 5px;
-}
 
 .surname:hover {
 }
@@ -82,11 +115,6 @@ body {
 }
 
 /* .............................. */
-.email {
-  margin: 10px;
-  height: 50px;
-  border-radius: 5px;
-}
 
 .email:hover {
 }
@@ -95,11 +123,6 @@ body {
 }
 
 /* .............................. */
-.password {
-  margin: 10px;
-  height: 50px;
-  border-radius: 5px;
-}
 
 .password:hover {
 }
