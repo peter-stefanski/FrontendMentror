@@ -4,7 +4,7 @@
   --Dark_Blue: hsl(249, 10%, 26%);
   --Grayish_Blue: hsl(246, 25%, 77%);
 }
-_ * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -23,10 +23,20 @@ body {
 input {
   padding-left: 20px;
   font-weight: 800;
+  height: 200px;
 }
 
 input:active {
   border: 2px solid rgb(106, 106, 106);
+}
+
+.error_test {
+  color: red;
+  padding: 0;
+  margin: 0 12px 0;
+  font-size: 10px;
+  font-style: italic;
+  text-align: end;
 }
 
 /* input.error {
@@ -54,7 +64,7 @@ input:active {
 .right_side {
   display: flex;
   flex-direction: column;
-  padding: 300px;
+  padding: 400px;
 }
 .try_btn {
   height: 50px;
@@ -66,7 +76,7 @@ input:active {
 
 .container {
   width: 500px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -88,6 +98,7 @@ input:active {
 .terms {
   margin: 10px;
   font-size: 10px;
+  text-align: center;
 }
 /* .............................. */
 .name,
