@@ -36,7 +36,7 @@
       </button>
 
       <div class="container">
-        <div class="input_inside"><input type="input" class="name" placeholder="First Name">
+        <div class="input_inside"><input type="input" class="name" placeholder="First Name" onclick="this.value=''">
           <img class=" error_photo">
         </div>
         <span class="error_test">First Name cannot be empty</span>
@@ -49,6 +49,7 @@
 
         <div class="input_inside">
           <input type="text" class="email" placeholder="Email Address">
+          <p class="color_red_01">email@example/com</p>
           <img class="error_photo">
         </div>
         <span class="error_test">looks like this in not an email</span>
@@ -60,7 +61,10 @@
 
         <span class="error_test">Password cannot be empty</span>
         <button class="acces_btn">Claim your free trial</button>
-        <span class="terms">By clicking the button, you are agreeing to our Terms and Services</span>
+        <span class="terms">By clicking the button, you are agreeing to our&nbsp;<p class="color_red_02">Terms and
+            Services
+          </p>
+        </span>
       </div>
     </div>
   </div>
