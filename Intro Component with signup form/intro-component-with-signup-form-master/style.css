@@ -159,12 +159,12 @@ input:active {
   color: rgb(216, 116, 116);
 }
 
-/* .color_red_01 {
+.color_red_01 {
   position: absolute;
   top: 32px;
   left: 40px;
   font-weight: 700;
-} */
+}
 /* .............................. */
 .name,
 .surname,
