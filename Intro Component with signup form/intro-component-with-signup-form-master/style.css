@@ -37,23 +37,24 @@ h1 {
 }
 
 .input_inside {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   height: 80px;
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 input {
-  padding-left: 20px;
   font-weight: 800;
   height: 80px;
   display: block;
-  width: 85%;
+  width: 100%;
   padding: 0.5rem;
   outline: none;
 }
 
-input:active {
+input:focus {
   border: 2px solid rgb(106, 106, 106);
 }
 
@@ -72,6 +73,7 @@ input:active {
   position: absolute;
   top: 26px;
   left: 400px;
+  display: none;
 }
 
 .error_test {
@@ -81,6 +83,7 @@ input:active {
   font-size: 10px;
   font-style: italic;
   text-align: end;
+  display: none;
 }
 
 /* input.error {
@@ -121,7 +124,7 @@ input:active {
 
 .container {
   width: 500px;
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -135,8 +138,7 @@ input:active {
 .acces_btn {
   height: 60px;
   background-color: var(--Green);
-  margin-bottom: 10px;
-  margin: 10px;
+  margin: 20px;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 800;
@@ -145,7 +147,7 @@ input:active {
 }
 
 .terms {
-  margin: 10px;
+  margin: 0px;
   font-size: 10px;
   text-align: center;
   display: flex;
@@ -164,6 +166,7 @@ input:active {
   top: 32px;
   left: 40px;
   font-weight: 700;
+  display: none;
 }
 /* .............................. */
 .name,
