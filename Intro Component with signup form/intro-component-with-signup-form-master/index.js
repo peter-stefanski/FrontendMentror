@@ -15,13 +15,13 @@
 //   name_palce.classList.add("error");
 // }
 
-const inputs = document.querySelector("input");
+const inputs = document.querySelector("input_inside");
 
 function validateInput() {
   for (let i; i < inputs.length; i++) {
     input[i].addEventListener("blur", function () {
-      const error = document.getElementsByClassName("error");
-      const errorIcon = document.getElementsByClassName("error-icon");
+      const error = document.getElementsByClassName("error_test");
+      const errorIcon = document.getElementsByClassName("error_photo");
 
       if (!this.value) {
         this.classList.add("invalid");
