@@ -168,6 +168,13 @@ input:focus {
   font-weight: 700;
   display: none;
 }
+
+.visible {
+  display: block;
+}
+.invalid {
+  display: block;
+}
 /* .............................. */
 .name,
 .surname,
